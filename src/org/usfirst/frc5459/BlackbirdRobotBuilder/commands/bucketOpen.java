@@ -12,6 +12,7 @@
 package org.usfirst.frc5459.BlackbirdRobotBuilder.commands;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc5459.BlackbirdRobotBuilder.Robot;
+import org.usfirst.frc5459.BlackbirdRobotBuilder.subsystems.Bucket;
 
 /**
  *
@@ -36,6 +37,7 @@ public class bucketOpen extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	Robot.bucket.open();
     }
 
     // Called repeatedly when this Command is scheduled to run
